@@ -1,6 +1,8 @@
 # Sveltekit Example with Vercel Image Optimization
 [Vercel Image Documentation](https://vercel.com/docs/concepts/image-optimization)
 
+Vercel Site: https://vercel-images-sveltekit.vercel.app/
+
 Set Vercel Build Script to:
 ```
 npm run build:vercel
