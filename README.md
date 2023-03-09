@@ -1,38 +1,23 @@
-# create-svelte
+# Sveltekit Example with Vercel Image Optimization
+[Vercel Image Documentation](https://vercel.com/docs/concepts/image-optimization)
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+Set Vercel Build Script to:
+```
+npm run build:vercel
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+Update remote image settings in `scripts/vercel-images.js`
+[Vercel Build Output API](https://vercel.com/docs/build-output-api/v3#build-output-configuration/supported-properties/images)
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+images: {
+  "sizes": [640, 768, 1024, 1280, 1536],
+  "domains": [],
+  "minimumCacheTTL": 60,
+  "formats": ["image/avif", "image/webp"],
+  "remotePatterns": [ 
+    { 
+      "hostname": "xxxxxxxx.cloudfront.net"
+    }, 
+  ]
+}
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

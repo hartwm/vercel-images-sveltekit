@@ -1,7 +1,5 @@
 // scripts/vercel-images.js
-import fs from 'node:fs';
-import dotenv from 'dotenv'
-dotenv.config()
+import fs from 'node:fs'; 
 
 const file = '.vercel/output/config.json';
 
@@ -14,7 +12,7 @@ const config = {
 				"formats": ["image/avif", "image/webp"],
 				"remotePatterns": [ 
 					{ 
-						"hostname": "xxxxxxxx.cloudfront.net"
+						"hostname": "d2od76x949sv9u.cloudfront.net"
 					}, 
 				]
 			}

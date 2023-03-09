@@ -16,9 +16,9 @@
   <h3>Remote Images</h3>
   <p>Set remote options in scripts/vercel-images.js</p>
   <Image 
-    image={{sourceUrl:'https://xxxxxxxx.cloudfront.net/example.jpg'}} 
+    image={{sourceUrl:'https://d2od76x949sv9u.cloudfront.net/koios/wp-content/uploads/2023/01/30164450/paul-kansonkho-9xjHQvdMi4c-unsplash-scaled.jpg'}} 
     width={1920}  
-    height={1277}
+    height={1277} 
   />  
 
   <h3>Using with Image Sizes</h3>
@@ -29,7 +29,7 @@
   <Image 
     image={{sourceUrl:'/example.jpg'}} 
     width={1920}  
-    height={1277}
+    height={1277} 
     sizes={{lg: '50vw', xl:'33vw'}}
   />  
 </section>
