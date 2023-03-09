@@ -7,7 +7,9 @@ const config = {
   ...JSON.parse(fs.readFileSync(file, 'utf-8')),
 		images: {
 				"sizes": [640, 768, 1024, 1280, 1536],
-				"domains": [],
+				"domains": [
+					'vercel-images-sveltekit.vercel.app'
+				],
 				"minimumCacheTTL": 60,
 				"formats": ["image/avif", "image/webp"],
 				"remotePatterns": [ 
