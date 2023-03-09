@@ -6,14 +6,8 @@
   <h1>
     Very Opinionated Example of Using SvelteKit with Vercel Image Optimization
   </h1>
-  <p>
-    Make sure the image sizes in the Image component and the Vercel Image script
-    are the same
-  </p>
-  <p>
-    Change build script in vercel to `npm run build:vercel` or change
-    package.json
-  </p>
+  <a href="https://github.com/hartwm/vercel-images-sveltekit">Github Repo</a>
+    
 
   <h3>Local Images</h3>
   <Image image={{ sourceUrl: "/example.jpg" }} width={1920} height={1277} />
